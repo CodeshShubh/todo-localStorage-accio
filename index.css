@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.input_section_container{
+    width: 98%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    input{
+        height: 3rem;
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+        outline: none;
+    }
+    button{
+        min-width: 10rem;
+        border: none;
+        background-color: black;
+        font-size: 1.2rem;
+        color: white;
+    }
+    select{
+        min-width: 20rem;
+        font-size: 1.2rem;
+        outline: none;
+    }
+}
+
+.list_container{
+    h1{
+        padding-top: 1rem;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }
+    .list_card_container{
+        width: 98%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        .list_card{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 0.6rem 1rem ;
+            border-radius: 10px;
+            margin: 0.5rem;
+            .delete_check_icons{
+                display: flex;
+                gap: 1rem;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
