@@ -1,209 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List by Shubhanshu Saadhiyaan</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
- <!-- heading -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- heading -->
     <div class="heading">
-        <h1>To-Do List </h1>
+      <h1>To-Do List</h1>
     </div>
 
     <!-- input section contianer -->
     <div class="input_section_container">
-        <input type="text" placeholder="Item Name" id="task_name" required/>
-        <input type="date" placeholder="Deadline" id="selected_date" required/>
-        <select id="selected_option" required>
-            <option disabled selected>Priority</option>
-            <option>High</option>
-            <option >Medium</option>
-            <option>Low</option>
-        </select>
-        <button id="add_btn">Add Item</button>
+      <input type="text" placeholder="Item Name" id="task_name" required />
+      <input type="date" placeholder="Deadline" id="selected_date" required />
+      <select id="selected_option" required>
+        <option disabled selected>Priority</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+      <button id="add_btn">Add Item</button>
     </div>
 
-
-
-
-<!-- today container -->
+    <!-- today container -->
     <div class="list_container">
-     <h1>Today’s TodoList</h1>
-        <div class="list_card_container" id="today_list">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
+      <h1>Today’s TodoList</h1>
+      <div class="list_card_container" id="today_list">
+        <div class="list_card">
+          <p> Add Today Tasks</p>
+          <p>00/00/0000</p>
+          <p>Priority: ____</p>
+          <div class="delete_check_icons">
+            <img src="./icons8-check.gif" alt="check" />
+            <img src="./icons8-delete.gif" alt="delete" />
+          </div>
         </div>
-
-        <!-- <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div> -->
+      </div>
     </div>
 
-
-
-
-<!-- future container -->
+    <!-- future container -->
     <div class="list_container">
-        <h1>Future TodoList</h1>
-           <div class="list_card_container" id="future_list">
-               <div class="list_card">
-                   <p>1. AccioJob Assignment</p>
-                   <p>16/1/2022</p>
-                   <p>Priority: High</p>
-                   <div class="delete_check_icons">
-                       <img src="./icons8-check.gif" alt="check"/>
-                       <img src="./icons8-delete.gif" alt="delete"/>
-                   </div>
-               </div>
-           </div>
-
-           <!-- <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
+      <h1>Future TodoList</h1>
+      <div class="list_card_container" id="future_list">
+        <div class="list_card">
+          <p> Add Future Tasks</p>
+          <p>00/00/0000</p>
+          <p>Priority: ___</p>
+          <div class="delete_check_icons">
+            <img src="./icons8-check.gif" alt="check" />
+            <img src="./icons8-delete.gif" alt="delete" />
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
+    <!-- completed task container -->
+    <div class="list_container">
+      <h1>Completed TodoList</h1>
+      <div class="list_card_container" id="completed_list">
+        <div
+          class="list_card"
+          style="background-color: white; color: black; border: 1px solid black"
+        >
+          <p>Completed Tasks</p>
+          <p>00/00/0000</p>
+          <p>Priority: ___</p>
+          <div class="delete_check_icons">
+            <!-- <img src="./icons8-check.gif" alt="check" /> -->
+            <img src="./icons8-delete.gif" alt="delete" />
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="list_card_container">
-            <div class="list_card">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div> -->
-       </div>
-
-
-
-
-
-
-<!-- completed task container -->
-       <div class="list_container">
-        <h1>Completed TodoList</h1>
-           <div class="list_card_container">
-               <div class="list_card" style="background-color: white; color: black; border: 1px solid black;">
-                   <p>1. AccioJob Assignment</p>
-                   <p>16/1/2022</p>
-                   <p>Priority: High</p>
-                   <div class="delete_check_icons">
-                       <img src="./icons8-check.gif" alt="check"/>
-                       <img src="./icons8-delete.gif" alt="delete"/>
-                   </div>
-               </div>
-           </div>       
-           
-           <div class="list_card_container">
-            <div class="list_card" style="background-color: white; color: black; border: 1px solid black;">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>   
-
-        <div class="list_card_container">
-            <div class="list_card" style="background-color: white; color: black; border: 1px solid black;">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>   
-
-        <div class="list_card_container">
-            <div class="list_card" style="background-color: white; color: black; border: 1px solid black;">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>   
-
-        <div class="list_card_container">
-            <div class="list_card" style="background-color: white; color: black; border: 1px solid black;">
-                <p>1. AccioJob Assignment</p>
-                <p>16/1/2022</p>
-                <p>Priority: High</p>
-                <div class="delete_check_icons">
-                    <img src="./icons8-check.gif" alt="check"/>
-                    <img src="./icons8-delete.gif" alt="delete"/>
-                </div>
-            </div>
-        </div>   
-       </div>
-    
     <script src="./inex.js"></script>
-</body>
+  </body>
 </html>
