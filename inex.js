@@ -176,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //   renderTodayTasks();
         renderFutureTasks();
       });
+      
     });
 
     document.querySelectorAll(".future_check_icon").forEach((icon) => {
@@ -249,3 +250,6 @@ function deleteCompletedTasks(){
   renderFutureTasks();
   rederCompletedTasks();
 });
+
+
+
